@@ -12,11 +12,12 @@ energy = [float(p) for p in energy if p and p[0] == '-']
 time = time.split(' ')
 time = [float(p.strip()) for p in time if p and p != '\n']
 
-fig,ax = plt.subplots()
-ax.plot(time, energy, 'r-+')
-ax.set(xlabel='PWSCF[s]', ylabel='energia całkowita [Ry]', title='Zależność energii całkowitej osiągniętej przez układ od czasu obliczeń')
-ax.grid()
-fig.savefig('skrypt1')
+plt.figure()
+plt.plot(time, energy, 'r-+')
+plt.xlabel('PWSCF[s]')
+plt.ylabel('energia całkowita [Ry]')
+plt.title('Zależność Energii całkowitej osiągniętej przez układ od czasu obliczeń')
+plt.savefig('skrypt1')
 
 print(time)
 print(energy)
