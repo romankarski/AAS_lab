@@ -17,7 +17,7 @@ ax.plot(time, np.asarray(energy, np.float32), 'g-+')
 ax.set_xlabel('PWSCF[s]')
 ax.set_ylabel('energia całkowita [Ry]')
 ax.set_title('Zależność Energii całkowitej układu od czasu')
-plt.subplots_adjust(wspace=0.8, hspace=0.8, left=0.5, bottom=0.2, right=0.6, top=1)
+plt.subplots_adjust(wspace=1.2, hspace=0.8, left=0.001, bottom=0.1, right=0.9, top=1)
 fig.savefig('skrypt4')
 
 print(time)
