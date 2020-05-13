@@ -8,9 +8,9 @@ with open('time.txt', 'r') as file:
     time = file.read()
 
 energy = energy.split(' ')
-energy = [p for p in energy if p and p[0] == '-']
+energy = [float(p) for p in energy if p and p[0] == '-']
 time = time.split(' ')
-time = [p.strip() for p in time if p and p != '\n']
+time = [float(p.strip()) for p in time if p and p != '\n']
 
 fig,ax = plt.subplots()
 ax.plot(time, energy, 'r-+')
@@ -18,3 +18,5 @@ ax.set(xlabel='PWSCF[s]', ylabel='energia całkowita [Ry]', title='Zależność 
 ax.grid()
 fig.savefig('skrypt1')
 
+print(time)
+print(energy)
