@@ -18,7 +18,7 @@ plt.xlabel('PWSCF[s]')
 plt.ylabel('energia całkowita [Ry]')
 plt.yscale('linear')
 plt.title('Zależność Energii całkowitej układu od czasu')
-plt.savefig('skrypt1')
+plt.savefig('skrypt2')
 
 print(time)
 print(energy)
