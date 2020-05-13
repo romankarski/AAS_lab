@@ -23,5 +23,4 @@ fig.savefig('skrypt1_plot')
 
 print(time)
 print(energy)
-print("Change 123")
 

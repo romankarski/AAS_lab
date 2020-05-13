@@ -79,3 +79,5 @@ echo `rm $output_file`
 
 done
 
+echo `python3 script2_python.py | python3`
+
